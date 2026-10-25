@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #fff8f8;
+color: #333;
+}
+
+header {
+background: #831843;
+color: white;
+padding: 20px 5%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+header h1 {
+font-size: 28px;
+}
+
+header input {
+padding: 12px;
+width: 300px;
+max-width: 100%;
+border: none;
+border-radius: 6px;
+}
+
+button {
+background: #e11d48;
+color: white;
+border: none;
+padding: 11px 18px;
+border-radius: 6px;
+cursor: pointer;
+margin: 4px;
+}
+
+button:hover {
+background: #be123c;
+}
+
+nav {
+background: white;
+padding: 16px;
+text-align: center;
+box-shadow: 0 2px 8px #00000010;
+}
+
+nav a {
+color: #831843;
+text-decoration: none;
+margin: 0 20px;
+font-weight: bold;
+}
+
+.hero {
+background: linear-gradient(120deg, #fbcfe8, #fce7f3);
+text-align: center;
+padding: 85px 20px;
+}
+
+.hero h2 {
+font-size: 42px;
+color: #831843;
+margin-bottom: 15px;
+}
+
+.hero p {
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+.shop-btn {
+display: inline-block;
+background: #831843;
+color: white;
+text-decoration: none;
+padding: 13px 28px;
+border-radius: 6px;
+}
+
+.section-title {
+text-align: center;
+margin: 40px 0 25px;
+color: #831843;
+font-size: 30px;
+}
+
+.products {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 22px;
+padding: 20px 5%;
+}
+
+.product {
+background: white;
+border-radius: 10px;
+padding: 15px;
+text-align: center;
+box-shadow: 0 3px 12px #00000012;
+}
+
+.product img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+.product h3 {
+margin: 15px 0 10px;
+}
+
+.product p {
+color: #831843;
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.info {
+text-align: center;
+padding: 45px 20px;
+background: #fce7f3;
+margin-top: 30px;
+}
+
+.info h2 {
+color: #831843;
+margin-bottom: 12px;
+}
+
+footer {
+background: #500724;
+color: white;
+text-align: center;
+padding: 25px;
+line-height: 2;
+}
+
+@media (max-width: 900px) {
+.products {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+
+@media (max-width: 500px) {
+header {
+justify-content: center;
+}
+
+header input {
+    width: 100%;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+nav a {
+    margin: 0 8px;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.products {
+    grid-template-columns: 1fr;
+}
+
+}
